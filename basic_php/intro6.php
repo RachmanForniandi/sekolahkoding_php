@@ -26,6 +26,7 @@
 		$angka2 = 3;
 		$angka3 = 2.64; //tipe float
 	
+		//-------Operator Math---------
 		//tipe data aritmatik
 		// + - * / % ++ --
 		
@@ -37,13 +38,24 @@
 		//$angka1 += $angka3;
 		//echo $angka1;
 		
+		//--------Math method----------
 		//round rand(min, max)
-		//echo "Angka hari adalah ". rand(5, 10);
+		//echo "Angka hari ini adalah ". rand(5, 10);
 		
 		//max/min(min, max)
 		//echo "Angka hari adalah ". min(5, 10, 8, 15);
-		echo "Angka hari adalah ". min($angka1, $angka2, $angka3);
-				
+		//echo "Angka hari adalah ". min($angka1, $angka2, $angka3);
+		
+		//------String Method---------
+		//strlen && str_word_count
+		//str_replace(find,replace,string)
+		//str_repeat(text, times); str_shuffle(text);
+		
+		$text= "Hai semuanya di sini!";
+		//echo str_word_count($text);
+		//echo str_replace("Hai", "Halo", $text);
+		//echo str_repeat("Hai ",8);
+		echo str_repeat(str_replace("Hai", "Hallo", $text), 10);		
     ?>
     
     </body>
