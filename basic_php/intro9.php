@@ -18,19 +18,16 @@
 		//print_r($kotak);	
 		//echo $nama[0];
 		
-		//--------Metode Array-------
-		//array_unique, _reverse, shuffle, count, sort
-		//print_r(array_unique($kotak));
-		//print_r(array_reverse($kotak));
-		
-		/*utk Array shuffle*/
-		//shuffle($kotak);
-		//print_r($kotak);
-		
-		/*utk Array sort*/
-		sort($angka);
-		print_r($angka);
-	
+		//--------Associative Array-------
+		$data = array( "nama"      => "hilman",
+					   "umur" 	   => 21,
+					   "pekerjaan" => "pengacara",	
+					 );
+					 
+		//print_r($data);
+		$data["nama"] = "Rachman Forniandi";
+		//echo "Pekerjaanya adalah ".$data['pekerjaan'];
+		echo "Namanya ".$data['nama'];
 	?>
     
     </body>
