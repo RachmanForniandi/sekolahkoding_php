@@ -19,23 +19,30 @@
 			$keyboard = 2000;
 			$bonus = 4000;
 			
-			//true atau false
-			$hasil = true;
-			$hasil2 = false;
+			// && atau ||
+			if($pendapatan > $keyboard && $bonus > $keyboard){
+				echo 'Jadi beli';
+			}else{
+				echo 'nggak jadi beli';
+			}
 			
-			if($hasil){
-				echo 'Jadi beli !';
-			}else if($hasil2){
-				echo 'siip. Jadi beli !';
+			//true atau false
+			//$hasil = true;
+			//$hasil2 = false;
+			
+			//if($hasil2){
+			//	echo 'Jadi beli !';
+			//}else if($hasil2){
+			//	echo 'siip. Jadi beli !';
 				
 			//---if bercabang
-			if($bonus >= $keyboard *2){
-				echo 'beli lagi kalau begitu.';
-				}
-			}
-			else{
-				echo 'yah gak cukup';
-			}
+			//if($bonus >= $keyboard *2){
+			//	echo 'beli lagi kalau begitu.';
+			//	}
+			// }
+			//else{
+			//	echo 'yah gak cukup';
+			//}
 		?>
     </body>
 </html>
