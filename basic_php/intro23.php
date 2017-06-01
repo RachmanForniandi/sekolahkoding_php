@@ -15,16 +15,16 @@
 			//else if
 			//operator logika == === > >= < <= !=
 			
-			$pendapatan = 1000;
-			$keyboard = 2000;
-			$bonus = 4000;
+			//$pendapatan = 1000;
+			//$keyboard = 2000;
+			//$bonus = 4000;
 			
 			// && atau ||
-			if($pendapatan > $keyboard && $bonus > $keyboard){
-				echo 'Jadi beli';
-			}else{
-				echo 'nggak jadi beli';
-			}
+			//if($pendapatan > $keyboard && $bonus > $keyboard){
+			//	echo 'Jadi beli';
+			//}else{
+			//	echo 'nggak jadi beli';
+			//}
 			
 			//true atau false
 			//$hasil = true;
@@ -44,7 +44,23 @@
 			//	echo 'yah gak cukup';
 			//}
 			
-
+			//switch case
+			$nama ="Hamtaro";
+			
+			switch($nama){
+				case 'Ian';
+					echo 'panggilan sehari-harinya Ian';
+					break;
+				case 'Boss';
+					echo 'panggilan sehari-harinya Boss';
+					break;
+				case 'Vrda';
+					echo 'panggilan sehari-harinya Vrda';
+					break;
+				default:
+					echo 'tidak ada yang cocok';
+				
+			}
 		?>
     </body>
 </html>
