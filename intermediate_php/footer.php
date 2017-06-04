@@ -1,5 +1,6 @@
     <footer>
-    	&copy; Sekolah Koding 2017
+    	&copy; Sekolah Koding <?php echo date('M - Y')?>
     </footer>
+    
 </body>
 </html>

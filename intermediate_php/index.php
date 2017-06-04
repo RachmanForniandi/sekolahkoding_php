@@ -16,6 +16,12 @@
 		$pelajaran = "html css javascript php java";
 		print_r(explode(" ", $pelajaran));
 		?>
+        
+        <h2>Fungsi Date</h2>
+        
+        <?php 
+			echo date('d - M - Y');
+		?>
     </main>
     
 <?php include_once('footer.php'); ?>
