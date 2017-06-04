@@ -7,7 +7,7 @@
 
 <body>
 	<header>
-    	<h1>Sekolah Koding coey</h1>
+    	<h1>Sekolah Koding</h1>
     </header>
     
     <nav>
