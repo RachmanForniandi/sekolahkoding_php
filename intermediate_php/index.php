@@ -22,6 +22,24 @@
         <?php 
 			echo date('d - M - Y');
 		?>
+        
+        <h2>Trim dan Strip Tags</h2>
+        <?php 
+			$text = " ini adalah input user ";
+			
+			//Strip
+			echo "sebelum" . $text . "disini";
+			
+			echo "<br>";
+			
+			//Trim
+			echo "sesudah" . trim($text) . "disini";
+			
+			$text2 = "<script>alert('halo semuanya!')</script>";
+			//echo strip_tags($text2);
+			$text3 = "<b> Halo </b> semuanya";
+			echo strip_tags($text3, '<b>');
+		?>
     </main>
     
 <?php include_once('footer.php'); ?>
