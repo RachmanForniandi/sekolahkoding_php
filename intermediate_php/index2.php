@@ -1,10 +1,17 @@
 <?php 
 
 //--------GET and POST-----------
-echo $_GET['nama'];
+
+//if(isset($_GET['submit'])){
+//echo $_GET['password'];
+//}
+
+if(isset($_POST['submit'])){
+	echo $_POST['password'];
+}
 ?>
 
-<form action="index2.php" method="get">
+<form action="profile.php" method="get">
 
 	<input type="text" name="nama">
     <input type="password" name="password">
