@@ -5,6 +5,9 @@
 //if(isset($_GET['submit'])){
 //echo $_GET['password'];
 //}
+
+session_start();
+
 $username ='RachmanForniandi';
 $password = 'forniandi123';
 
@@ -16,7 +19,10 @@ if(isset($_POST['submit'])){
 		//utk cookie
 		//setcookie(key, nilai, expire)
 		setcookie('nama_user', $_POST['nama'], time()+180);
-		   
+		
+		//dgn session
+		$_SESSION['nama_user']= $_POST['nama'];
+		
 		//memindahkan ke halaman profile
 		header('Location: profile.php');	
 	}else{
