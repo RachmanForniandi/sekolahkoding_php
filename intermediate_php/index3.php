@@ -1,13 +1,17 @@
 <?php 
 
+
 if(isset($_POST['submit'])){
-	echo $_FILES['gambar']['name'];
+	//echo $_FILES['gambar']['name'];
+	//print_r($_FILES);
 	
+	$time   = time();
 	$nama   = $_FILES['gambar']['name'];
 	$error  = $_FILES['gambar']['error'];
 	$size   = $_FILES['gambar']['size'];
 	$lokasi = $_FILES['gambar']['tmp_name'];
 	$format = $_FILES['gambar']['type'];
+	$namafile = 'upload/'. $nama;
 	
 	//$ex = pathinfo($nama, PATHINFO_EXTENSION);
 	//die($ex);
@@ -16,8 +20,13 @@ if(isset($_POST['submit'])){
 		if($size < 1000000){
 	
 	if($format == 'image/jpeg' || 'images/png'){
+		
+		if(file_exists($namafile)){
+			$namafile = str_replace(".jpg", "", $namafile);
+			$namafile = $namafile. "_". $time . ".jpg";
+		}
 		//utk upload
-	move_uploaded_file($lokasi, 'upload/'. $nama);
+	move_uploaded_file($lokasi, $namafile);
 	echo 'upload berhasil!';		
 	
 		}else{
