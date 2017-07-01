@@ -11,13 +11,14 @@ if(!$koneksi){
 }
 
 //query membuat database
-$query = "CREATE DATABASE new_sekolahkoding";
+$query = "SELECT * FROM murid";
 $hasil = mysqli_query($koneksi, $query);
 
-if(mysqli_query($koneksi, $query) ){
-	echo 'database berhasil dibuat';
-}else{
-	echo 'database gagal dibuat !!';
+if(mysqli_num_rows($hasil) > 0 ){
+	
+	while ($data = mysqli_fetch_assoc($hasil)){
+		echo $data['nama']. " ". $data['alamat'] . "<br>";
+	}
 }
 
 //menutup koneksi
